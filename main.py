@@ -133,4 +133,4 @@ async def chat_proxy(request: GatewayRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    python -m uvicorn.run(app, host="0.0.0.0", port=8000)
